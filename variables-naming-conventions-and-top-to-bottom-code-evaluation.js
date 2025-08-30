@@ -24,9 +24,11 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let clientName = "Alice";
+let quantityPurchased = 5;
+let itemName = "shirts";
+let itemCost = 20;
+let purchaseTotal = quantityPurchased * itemCost;
+let receiptMemoLine = clientName + " bought " + quantityPurchased + " " + itemName + " for $" + itemCost + " each. " + "The total purchase cost was $" + purchaseTotal + ".";
 
-console.log(d);
+console.log(receiptMemoLine);
